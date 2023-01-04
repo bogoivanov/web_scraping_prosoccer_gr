@@ -38,7 +38,7 @@ for row in rows:
         odds_1 = float(cols[7].text)
         odds_X = float(cols[8].text)
         odds_2 = float(cols[9].text)
-        if odds_1 > 1.5 or odds_X > 1.5 or odds_2 > 1.5:
+        if odds_1 > 1.5 and odds_X > 1.5 and odds_2 > 1.5:
             if prediction_for_1 > 70 or prediction_for_x > 70 or prediction_for_2 > 70:
                 prediction = {"league": {league},
                               "time": {time},
